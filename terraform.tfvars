@@ -1,5 +1,5 @@
-access_key = "Access Key"
-secret_key = "Secure Key"
+access_key = "111"
+secret_key = "111"
 region = "cn-northwest-1"
 
 availability_zone1 = "cn-northwest-1a"
