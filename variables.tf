@@ -7,48 +7,68 @@ variable "secret_key" {
 variable "region" {
 }
 
+variable "terraformvpc_id" {
+default = "vpc-..."
+}
+
 variable "security_vpc_cidr" {
   default = "10.0.0.0/16"
 }
 
-variable "security_vpc_public_subnet_cidr1" {
-  default = "10.0.1.0/24"
+variable "public_subnet1_id" {
+  default = "subnet-...."
 }
 
 variable "availability_zone1" {
   default = "cn-northwest-1a"
 }
 
-variable "security_vpc_public_subnet_cidr2" {
-  default = "10.0.2.0/24"
+variable "public_subnet2_id" {
+  default = "subnet-...."
 }
 
 variable "availability_zone2" {
   default = "cn-northwest-1b"
 }
 
-variable "security_vpc_private_subnet_cidr1" {
-  default = "10.0.11.0/24"
+variable "private_subnet1_id" {
+  default = "subnet-...."
 }
 
-variable "security_vpc_private_subnet_cidr2" {
-  default = "10.0.22.0/24"
+variable "private_subnet2_id" {
+  default = "subnet-...."
 }
 
-variable "security_vpc_ha_subnet_cidr1" {
-  default = "10.0.30.0/24"
+variable "hasync_subnet1_id" {
+  default = "subnet-...."
 }
 
-variable "security_vpc_ha_subnet_cidr2" {
-  default = "10.0.31.0/24"
+variable "hasync_subnet2_id" {
+  default = "subnet-...."
 }
 
-variable "security_vpc_mgt_subnet_cidr1" {
-  default = "10.0.40.0/24"
+variable "hamgmt_subnet1_id" {
+  default = "subnet-...."
 }
 
-variable "security_vpc_mgt_subnet_cidr2" {
-  default = "10.0.41.0/24"
+variable "hamgmt_subnet2_id" {
+  default = "subnet-...."
+}
+
+variable "public_subnet1_router_ip" {
+  default = ""
+}
+
+variable "public_subnet2_router_ip" {
+  default = ""
+}
+
+variable "hamgmt_subnet1_router_ip" {
+  default = ""
+}
+
+variable "hamgmt_subnet2_router_ip" {
+  default = ""
 }
 
 variable "keypair" {

@@ -13,7 +13,7 @@ module "fg1" {
   vpc_id             = var.terraformvpc_id
   public_subnet1_id  = var.public_subnet1_id
   private_subnet1_id = var.private_subnet1_id
-  ha_subnet1_id      = var.hasync_subnet1
+  ha_subnet1_id      = var.hasync_subnet1_id
   mgt_subnet1_id     = var.hamgmt_subnet1_id
   availability_zone  = var.availability_zone1
   ami                = "ami-0a3925c3cc1847f42"
@@ -48,10 +48,10 @@ module "fg2" {
   region     = var.region
 
   vpc_id             = var.terraformvpc_id
-  public_subnet1_id  = var.public_subnet2_id
-  private_subnet1_id = var.private_subnet2_id
-  ha_subnet1_id      = var.hasync_subnet2_id
-  mgt_subnet1_id     = var.hamgmt_subnet2_id
+  public_subnet2_id  = var.public_subnet2_id
+  private_subnet2_id = var.private_subnet2_id
+  ha_subnet2_id      = var.hasync_subnet2_id
+  mgt_subnet2_id     = var.hamgmt_subnet2_id
   availability_zone  = var.availability_zone2
   ami                = "ami-0a3925c3cc1847f42"
   keypair            = var.keypair
