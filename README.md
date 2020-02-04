@@ -1,1 +1,4 @@
-# AWSChina-FGT_AP_NativeHA_ExistingVPC_BYOL
+# FortiGate-AWS-Native-HA-Terrform
+FortiGate-AWS-Native-HA-Terrform
+
+中国区国际区快速部署FortiGate Native HA
